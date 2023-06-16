@@ -2,15 +2,12 @@ import models.Usuario;
 import models.Cliente;
 import models.Capacitacion;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
 public class Main {
 
     public static void main(String[] args) {
 
         Cliente cliente = new Cliente(12345678, "Juan", "Pérez", "912345678", "AFP Modelo", 1, "Calle 123", "Santiago", 30);
-        Usuario usuario = new Usuario("María", "01-01-1990", 87654321);
+        Usuario usuario = new Usuario("María", "01-01-1990", "87654321");
         Capacitacion capacitacion = new Capacitacion(1, 12345678, "01-01-2023", "09:00", "Centro de Convenciones", 3, 50);
 
         System.out.println("Datos del cliente:");

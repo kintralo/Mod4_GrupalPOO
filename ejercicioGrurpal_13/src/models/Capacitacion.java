@@ -9,6 +9,9 @@ public class Capacitacion {
     private int duracion;
     private int cantidadAsistentes;
 
+    /**
+     *
+     */
     public Capacitacion() {
     }
 
