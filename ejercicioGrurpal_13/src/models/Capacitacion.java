@@ -2,17 +2,25 @@ package models;
 
 public class Capacitacion {
     private int identificador;
-    private int RUTCliente;
+    private String RUTCliente;
     private String dia;
     private String hora;
     private String lugar;
     private int duracion;
     private int cantidadAsistentes;
 
-    /**
-     *
-     */
     public Capacitacion() {
+
+    }
+
+    public Capacitacion(int identificador, String RUTCliente, String dia, String hora, String lugar, int duracion, int cantidadAsistentes) {
+        this.identificador = identificador;
+        this.RUTCliente = RUTCliente;
+        this.dia = dia;
+        this.hora = hora;
+        this.lugar = lugar;
+        this.duracion = duracion;
+        this.cantidadAsistentes = cantidadAsistentes;
     }
 
     public int getIdentificador() {
@@ -23,11 +31,11 @@ public class Capacitacion {
         this.identificador = identificador;
     }
 
-    public int getRUTCliente() {
+    public String getRUTCliente() {
         return RUTCliente;
     }
 
-    public void setRUTCliente(int RUTCliente) {
+    public void setRUTCliente(String RUTCliente) {
         this.RUTCliente = RUTCliente;
     }
 
@@ -75,7 +83,7 @@ public class Capacitacion {
     public String toString() {
         return "Capacitacion{" +
                 "identificador=" + identificador +
-                ", RUTCliente=" + RUTCliente +
+                ", RUTCliente='" + RUTCliente + '\'' +
                 ", dia='" + dia + '\'' +
                 ", hora='" + hora + '\'' +
                 ", lugar='" + lugar + '\'' +

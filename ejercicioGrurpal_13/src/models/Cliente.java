@@ -4,7 +4,7 @@ package models;
  * @author
  */
 public class Cliente {
-    private Integer RUT;
+    private String RUT;
     private String nombres;
     private String apellidos;
     private String telefono;
@@ -16,7 +16,7 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(Integer RUT, String nombres, String apellidos, String telefono, String AFP, int sistemaSalud, String direccion, String comuna, int edad) {
+    public Cliente(String RUT, String nombres, String apellidos, String telefono, String AFP, int sistemaSalud, String direccion, String comuna, int edad) {
         this.RUT = RUT;
         this.nombres = nombres;
         this.apellidos = apellidos;
@@ -28,11 +28,11 @@ public class Cliente {
         this.edad = edad;
     }
 
-    public Integer getRUT() {
+    public String getRUT() {
         return RUT;
     }
 
-    public void setRUT(Integer RUT) {
+    public void setRUT(String RUT) {
         this.RUT = RUT;
     }
 
