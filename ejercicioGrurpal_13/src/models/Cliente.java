@@ -1,5 +1,8 @@
 package models;
 
+/**
+ * @author
+ */
 public class Cliente {
     Integer RUT;
     Integer Edad;
@@ -9,4 +12,7 @@ public class Cliente {
     String AFP;
     String Direccion;
     String Comuna;
+
+    public Cliente() {
+    }
 }
