@@ -8,7 +8,7 @@ public class Main {
 
         Cliente cliente = new Cliente(12345678, "Juan", "Pérez", "912345678", "AFP Modelo", 1, "Calle 123", "Santiago", 30);
         Usuario usuario = new Usuario("María", "01-01-1990", "87654321");
-        Capacitacion capacitacion = new Capacitacion(1, 12345678, "01-01-2023", "09:00", "Centro de Convenciones", 3, 50);
+        Capacitacion capacitacion = new Capacitacion(1, 12345678, "01-01-2023", "09:00", "Centro de Convencionesss", 3, 50);
 
         System.out.println("Datos del cliente:");
         System.out.println(cliente.toString());
