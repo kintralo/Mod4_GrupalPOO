@@ -19,6 +19,9 @@ public class Usuario {
         this.RUN = RUN;
     }
 
+    public Usuario(String maría, String s, String run) {
+    }
+
     public String getNombre() {
         return Nombre;
     }
