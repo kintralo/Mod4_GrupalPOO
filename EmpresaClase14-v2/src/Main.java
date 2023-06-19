@@ -9,63 +9,66 @@ public class Main {
         cliente1.toString();
         cliente2.toString();
         cliente2.setSistemaDeSalud(2);
-        cliente1.getRUT();
-        cliente1.getNombres();
-        cliente1.getApellidos();
-        cliente1.getEdad();
-        cliente1.getAFP();
-        cliente1.getSistemaDeSalud();
-        cliente1.getDireccion();
-        cliente1.getComuna();
-        cliente1.getTelefono();
-
-        cliente2.getRUT();
-        cliente2.getNombres();
-        cliente2.getApellidos();
-        cliente2.getEdad();
-        cliente2.getAFP();
-        cliente2.getSistemaDeSalud();
-        cliente2.getDireccion();
-        cliente2.getComuna();
-        cliente2.getTelefono();
-
+        System.out.println("***************************************************************");
+        System.out.println("RUT: "+cliente1.getRUT());
+        System.out.println("Nombres: "+cliente1.getNombres());
+        System.out.println("Apellidos: "+cliente1.getApellidos());
+        System.out.println("Edad: "+cliente1.getEdad());
+        System.out.println("AFP: "+cliente1.getAFP());
+        System.out.println("Sistema de salud: "+cliente1.getSistemaDeSalud());
+        System.out.println("Dirección: "+cliente1.getDireccion());
+        System.out.println("Comuna: "+cliente1.getComuna());
+        System.out.println("Telefono: "+cliente1.getTelefono());
+        System.out.println("***************************************************************");
+        System.out.println("RUT: "+cliente2.getRUT());
+        System.out.println("Nombres: "+cliente2.getNombres());
+        System.out.println("Apellidos: "+cliente2.getApellidos());
+        System.out.println("Edad: "+cliente2.getEdad());
+        System.out.println("AFP: "+cliente2.getAFP());
+        System.out.println("Sistema de salud: "+cliente2.getSistemaDeSalud());
+        System.out.println("Dirección: "+cliente2.getDireccion());
+        System.out.println("Comuna: "+cliente2.getComuna());
+        System.out.println("Telefono: "+cliente2.getTelefono());
+        System.out.println("***************************************************************");
         Usuario usuario1 = new Usuario();
         Usuario usuario2 = new Usuario( "Roberto Carlos", LocalDate.of(1990,2,5), "1-9");
-        usuario2.mostrarEdad();
-
+        System.out.println("***************************************************************");
         usuario1.toString();
+        System.out.println("***************************************************************");
         usuario2.toString();
-
         usuario2.setNombres("Julio Ramon");
-        usuario1.getNombres();
-        usuario1.getRun();
-        usuario1.getFechaNacimiento();
-        usuario2.getNombres();
-        usuario2.getRun();
-        usuario2.getFechaNacimiento();
+        System.out.println("***************************************************************");
+        System.out.println("Nombres: "+usuario1.getNombres());
+        System.out.println("RUN: "+usuario1.getRun());
+        System.out.println("Fecha de nacimiento: "+usuario1.getFechaNacimiento());
+        System.out.println("***************************************************************");
+        System.out.println("Nombres: "+usuario2.getNombres());
+        System.out.println("RUN: "+usuario2.getRun());
+        System.out.println("Fecha de nacimiento: "+usuario2.getFechaNacimiento());
 
         Capacitacion capacitacion1 = new Capacitacion();
         Capacitacion capacitacion2 = new Capacitacion(1, "1-9", 18, LocalTime.of(15,0),  "Online Zoom", 180, 15);
+        System.out.println("***************************************************************");
         capacitacion1.toString();
+        System.out.println("***************************************************************");
         capacitacion2.toString();
         capacitacion2.setLugar("Online vía Meet");
-
-        capacitacion1.getId();
-        capacitacion1.getRut();
-        capacitacion1.getDia();
-        capacitacion1.getHora();
-        capacitacion1.getLugar();
-        capacitacion1.getDuracion();
-        capacitacion1.getAsistentes();
-
-        capacitacion2.getId();
-        capacitacion2.getRut();
-        capacitacion2.getDia();
-        capacitacion2.getHora();
-        capacitacion2.getLugar();
-        capacitacion2.getDuracion();
-        capacitacion2.getAsistentes();
-
+        System.out.println("***************************************************************");
+        System.out.println("ID: "+capacitacion1.getId());
+        System.out.println("RUT: "+capacitacion1.getRut());
+        System.out.println("Día: "+capacitacion1.getDia());
+        System.out.println("Hora: "+capacitacion1.getHora());
+        System.out.println("Lugar: "+capacitacion1.getLugar());
+        System.out.println("Duración: "+capacitacion1.getDuracion());
+        System.out.println("Asistentes: "+capacitacion1.getAsistentes());
+        System.out.println("***************************************************************");
+        System.out.println("ID: "+capacitacion2.getId());
+        System.out.println("RUT: "+capacitacion2.getRut());
+        System.out.println("Día: "+capacitacion2.getDia());
+        System.out.println("Hora: "+capacitacion2.getHora());
+        System.out.println("Lugar: "+capacitacion2.getLugar());
+        System.out.println("Duración: "+capacitacion2.getDuracion());
+        System.out.println("Asistentes: "+capacitacion2.getAsistentes());
 
     }
 }

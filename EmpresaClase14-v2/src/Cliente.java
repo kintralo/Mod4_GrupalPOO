@@ -40,89 +40,75 @@ public class Cliente {
                 '}';
     }
 
-    public Integer getRUT() {
-        System.out.println(this.RUT);
-        return null;
-    }
-
     public void setRUT(Integer RUT) {
         this.RUT = RUT;
     }
-
-    public String getNombres() {
-        System.out.println(this.nombres);
-        return null;
-    }
-
     public void setNombres(String nombres) {
         this.nombres = nombres;
     }
-
-    public String getApellidos() {
-        System.out.println(this.apellidos);
-        return null;
-    }
-
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
-
-    public Integer getTelefono() {
-        System.out.println(this.telefono);
-        return null;
-    }
-
     public void setTelefono(Integer telefono) {
         this.telefono = telefono;
     }
-
-    public String getAFP() {
-        System.out.println(this.AFP);
-        return null;
-    }
-
     public void setAFP(String AFP) {
         this.AFP = AFP;
     }
-
-    public void getSistemaDeSalud() {
-        System.out.println(sistemaDeSalud);
-    }
-
     public void setSistemaDeSalud(int sistemaDeSalud) {
         this.sistemaDeSalud = sistemaDeSalud;
     }
-
-    public String getDireccion() {
-        System.out.println(this.Direccion);
-        return null;
-    }
-
     public void setDireccion(String direccion) {
         Direccion = direccion;
     }
-
-    public String getComuna() {
-        System.out.println(this.Comuna);
-        return null;
-    }
-
     public void setComuna(String comuna) {
         Comuna = comuna;
     }
-
-    public String getEdad() {
-        System.out.println(this.Edad);
-        return null;
-    }
-
     public void setEdad(String edad) {
         Edad = edad;
     }
-    public void obtenerNombre(int RUT) {
-        System.out.println(this.nombres+" "+this.apellidos);
+
+    public Integer getRUT() {
+        return RUT;
     }
-    public void obtenerSistemaSalud() {
+
+    public String getNombres() {
+        return nombres;
+    }
+
+    public String getApellidos() {
+        return apellidos;
+    }
+
+    public Integer getTelefono() {
+        return telefono;
+    }
+
+    public String getAFP() {
+        return AFP;
+    }
+
+    public int getSistemaDeSalud() {
+        return sistemaDeSalud;
+    }
+
+    public String getDireccion() {
+        return Direccion;
+    }
+
+    public String getComuna() {
+        return Comuna;
+    }
+
+    public String getEdad() {
+        return Edad;
+    }
+
+    public String obtenerNombre(int RUT) {
+        String nombres = getNombres()+" "+getApellidos();
+        return nombres;
+    }
+    public String obtenerSistemaSalud() {
         String respuesta="";
         if(this.sistemaDeSalud==1){
             respuesta="Fonasa";
@@ -130,6 +116,6 @@ public class Cliente {
         if(this.sistemaDeSalud==2){
             respuesta="Isapre";
         }
-        System.out.println("Sistema de salud: "+respuesta);
+        return respuesta;
     }
 }

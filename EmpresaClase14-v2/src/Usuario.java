@@ -23,31 +23,29 @@ public class Usuario {
                 ", run='" + run + '\'' +
                 '}';
     }
-
-    public void getNombres() {
-        System.out.println(this.nombres);
-    }
-
     public void setNombres(String nombres) {
         this.nombres = nombres;
     }
-
-    public void getFechaNacimiento() {
-        System.out.println(this.fechaNacimiento);
-    }
-
     public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
     }
-
-    public void getRun() {
-        System.out.println(this.run);
-    }
-
     public void setRun(String run) {
         this.run = run;
         return;
     }
+
+    public String getNombres() {
+        return nombres;
+    }
+
+    public LocalDate getFechaNacimiento() {
+        return fechaNacimiento;
+    }
+
+    public String getRun() {
+        return run;
+    }
+
     public void mostrarEdad() {
         Period period = Period.between(this.fechaNacimiento, LocalDate.now());
         System.out.println("El usuario tiene " + period.getYears()+" años");
