@@ -1,94 +1,94 @@
 package models;
 
+import java.time.LocalTime;
+
+/**
+ * @author  Juan Pablo Vásquez
+ * Ándres Tapia
+ * Victor Briso
+ * Sebatián Araya
+ */
 public class Capacitacion {
-    private int identificador;
-    private String RUTCliente;
-    private String dia;
-    private String hora;
+    private int id;
+    private String rut;
+    private int dia;
+    private LocalTime hora;
     private String lugar;
-    private int duracion;
-    private int cantidadAsistentes;
+    private Integer duracion;
+    private int asistentes;
 
     public Capacitacion() {
-
     }
 
-    public Capacitacion(int identificador, String RUTCliente, String dia, String hora, String lugar, int duracion, int cantidadAsistentes) {
-        this.identificador = identificador;
-        this.RUTCliente = RUTCliente;
+    public Capacitacion(int id, String rut, int dia, LocalTime hora, String lugar, Integer duracion, int asistentes) {
+        this.id = id;
+        this.rut = rut;
         this.dia = dia;
         this.hora = hora;
         this.lugar = lugar;
         this.duracion = duracion;
-        this.cantidadAsistentes = cantidadAsistentes;
+        this.asistentes = asistentes;
     }
 
-    public int getIdentificador() {
-        return identificador;
+    public String toString() {
+        int var10000 = this.id;
+        return "Capacitacion{id=" + var10000 + ", rut='" + this.rut + "', dia=" + this.dia + ", hora=" + String.valueOf(this.hora) + ", lugar='" + this.lugar + "', duracion=" + this.duracion + ", asistentes=" + this.asistentes + "}";
     }
 
-    public void setIdentificador(int identificador) {
-        this.identificador = identificador;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getRUTCliente() {
-        return RUTCliente;
+    public void setRut(String rut) {
+        this.rut = rut;
     }
 
-    public void setRUTCliente(String RUTCliente) {
-        this.RUTCliente = RUTCliente;
-    }
-
-    public String getDia() {
-        return dia;
-    }
-
-    public void setDia(String dia) {
+    public void setDia(int dia) {
         this.dia = dia;
     }
 
-    public String getHora() {
-        return hora;
-    }
-
-    public void setHora(String hora) {
+    public void setHora(LocalTime hora) {
         this.hora = hora;
-    }
-
-    public String getLugar() {
-        return lugar;
     }
 
     public void setLugar(String lugar) {
         this.lugar = lugar;
     }
 
-    public int getDuracion() {
-        return duracion;
-    }
-
-    public void setDuracion(int duracion) {
+    public void setDuracion(Integer duracion) {
         this.duracion = duracion;
     }
 
-    public int getCantidadAsistentes() {
-        return cantidadAsistentes;
+    public void setAsistentes(int asistentes) {
+        this.asistentes = asistentes;
     }
 
-    public void setCantidadAsistentes(int cantidadAsistentes) {
-        this.cantidadAsistentes = cantidadAsistentes;
+    public int getId() {
+        return this.id;
     }
 
-    @Override
-    public String toString() {
-        return "Capacitacion{" +
-                "identificador=" + identificador +
-                ", RUTCliente='" + RUTCliente + '\'' +
-                ", dia='" + dia + '\'' +
-                ", hora='" + hora + '\'' +
-                ", lugar='" + lugar + '\'' +
-                ", duracion=" + duracion +
-                ", cantidadAsistentes=" + cantidadAsistentes +
-                '}';
+    public String getRut() {
+        return this.rut;
+    }
+
+    public int getDia() {
+        return this.dia;
+    }
+
+    public LocalTime getHora() {
+        return this.hora;
+    }
+
+    public String getLugar() {
+        return this.lugar;
+    }
+
+    public Integer getDuracion() {
+        return this.duracion;
+    }
+
+    public int getAsistentes() {
+        return this.asistentes;
     }
 }
+
