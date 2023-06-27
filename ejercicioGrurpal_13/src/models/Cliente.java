@@ -1,117 +1,188 @@
 package models;
 
-/**
- * @author
+/***
+ * @author Juan Pablo Vásquez
  */
+// Clase Cliente
 public class Cliente {
-    private String RUT;
+    // Declaración de Atributos
+    private String rut;
     private String nombres;
     private String apellidos;
     private String telefono;
-    private String AFP;
+    private String afp;
     private int sistemaSalud;
     private String direccion;
     private String comuna;
     private int edad;
+
+    /**
+     *
+     */
     public Cliente() {
     }
 
-    public Cliente(String RUT, String nombres, String apellidos, String telefono, String AFP, int sistemaSalud, String direccion, String comuna, int edad) {
-        this.RUT = RUT;
+
+    /**
+     * @param rut
+     * @param nombres
+     * @param apellidos
+     * @param telefono
+     * @param afp
+     * @param sistemaSalud
+     * @param direccion
+     * @param comuna
+     * @param edad
+     */
+    public Cliente(String rut, String nombres, String apellidos, String telefono, String afp, int sistemaSalud,
+                   String direccion, String comuna, int edad) {
+        super();
+        this.rut = rut;
         this.nombres = nombres;
         this.apellidos = apellidos;
         this.telefono = telefono;
-        this.AFP = AFP;
+        this.afp = afp;
         this.sistemaSalud = sistemaSalud;
         this.direccion = direccion;
         this.comuna = comuna;
         this.edad = edad;
     }
 
-    public String getRUT() {
-        return RUT;
+    /**
+     * @return the rut
+     */
+    public String getRut() {
+        return rut;
     }
 
-    public void setRUT(String RUT) {
-        this.RUT = RUT;
+    /**
+     * @param rut the rut to set
+     */
+    public void setRut(String rut) {
+        this.rut = rut;
     }
 
+    /**
+     * @return the nombres
+     */
     public String getNombres() {
         return nombres;
     }
 
+    /**
+     * @param nombres the nombres to set
+     */
     public void setNombres(String nombres) {
         this.nombres = nombres;
     }
 
+    /**
+     * @return the apellidos
+     */
     public String getApellidos() {
         return apellidos;
     }
 
+    /**
+     * @param apellidos the apellidos to set
+     */
     public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
     }
 
+    /**
+     * @return the telefono
+     */
     public String getTelefono() {
         return telefono;
     }
 
+    /**
+     * @param telefono the telefono to set
+     */
     public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
-    public String getAFP() {
-        return AFP;
+    /**
+     * @return the afp
+     */
+    public String getAfp() {
+        return afp;
     }
 
-    public void setAFP(String AFP) {
-        this.AFP = AFP;
+    /**
+     * @param afp the afp to set
+     */
+    public void setAfp(String afp) {
+        this.afp = afp;
     }
 
+    /**
+     * @return the sistemaSalud
+     */
     public int getSistemaSalud() {
         return sistemaSalud;
     }
 
+    /**
+     * @param sistemaSalud the sistemaSalud to set
+     */
     public void setSistemaSalud(int sistemaSalud) {
         this.sistemaSalud = sistemaSalud;
     }
 
+    /**
+     * @return the direccion
+     */
     public String getDireccion() {
         return direccion;
     }
 
+    /**
+     * @param direccion the direccion to set
+     */
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
 
+    /**
+     * @return the comuna
+     */
     public String getComuna() {
         return comuna;
     }
 
+    /**
+     * @param comuna the comuna to set
+     */
     public void setComuna(String comuna) {
         this.comuna = comuna;
     }
 
+    /**
+     * @return the edad
+     */
     public int getEdad() {
         return edad;
     }
 
+    /**
+     * @param edad the edad to set
+     */
     public void setEdad(int edad) {
         this.edad = edad;
     }
 
+    /**
+     * @return run, nombres, apellidos, telefono, sistemaSalud, direccion, comuna, edad
+     */
+
     @Override
     public String toString() {
-        return "Cliente{" +
-                "RUT=" + RUT +
-                ", nombres='" + nombres + '\'' +
-                ", apellidos='" + apellidos + '\'' +
-                ", telefono='" + telefono + '\'' +
-                ", AFP='" + AFP + '\'' +
-                ", sistemaSalud=" + sistemaSalud +
-                ", direccion='" + direccion + '\'' +
-                ", comuna='" + comuna + '\'' +
-                ", edad=" + edad +
-                '}';
+        return "Cliente [rut=" + rut + ", nombres=" + nombres + ", apellidos=" + apellidos + ", telefono="
+                + telefono + ", afp=" + afp + ", sistemaSalud=" + sistemaSalud + ", direccion=" + direccion
+                + ", comuna=" + comuna + ", edad=" + edad + "]";
     }
+
 }
