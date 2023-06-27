@@ -111,5 +111,6 @@ public class Usuario implements IAsesoria {
      */
     @Override
     public void analizarUsuario() {
+        System.out.println(this.toString());
     }
 }
